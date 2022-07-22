@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "iaccess-prototype-pwa",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

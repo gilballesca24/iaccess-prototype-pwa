@@ -1,0 +1,8 @@
+{
+  "name": "iaccess-prototype-pwa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "bdedda8c"
+}
