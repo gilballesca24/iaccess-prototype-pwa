@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { DataService, Message } from '../services/data.service';
 import { Router, NavigationExtras} from '@angular/router';
+//import { UserProfileComponent } from '../user-profile/user-profile.component';
 
 @Component({
   selector: 'app-home',

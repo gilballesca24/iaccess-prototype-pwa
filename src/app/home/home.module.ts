@@ -6,6 +6,10 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { MessageComponentModule } from '../message/message.module';
+import { UserProfileComponentModule } from '../user-profile/user-profile.module';
+import { WeekListSelectionComponentModule } from '../week-list-selection/week-list-selection.module';
+import { MenuSelectionModule } from '../menu-selection/menu-selection.module';
+import { HamburgerMenuComponentModule } from '../hamburger-menu/hamburger-menu.module';
 
 @NgModule({
   imports: [
@@ -13,7 +17,11 @@ import { MessageComponentModule } from '../message/message.module';
     FormsModule,
     IonicModule,
     MessageComponentModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    UserProfileComponentModule,
+    WeekListSelectionComponentModule,
+    MenuSelectionModule,
+    HamburgerMenuComponentModule
   ],
   declarations: [HomePage]
 })
