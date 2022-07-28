@@ -53,3 +53,13 @@
         color: #fff;
     }
 }
+
+.arrow_container { 
+    width: 100%;
+    padding-inline-start: 45%;
+    
+}
+.arrow_container>img {
+    width: 20px;
+    background-color: transparent !important;
+}
