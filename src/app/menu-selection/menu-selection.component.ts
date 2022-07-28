@@ -48,13 +48,25 @@ export class MenuSelectionComponent implements OnInit {
         icon:'thumbs-up',
         color:'#3399ff',
         theme:'dark'
-
+      },
+      {
+        name:'Rejections',
+        icon:'thumbs-up',
+        color:'#3399ff',
+        theme:'dark'
+      },
+      {
+        name:'Absence Requests',
+        icon:'thumbs-up',
+        color:'#3399ff',
+        theme:'dark'
+      },
+      {
+        name:'Allowance Requests',
+        icon:'thumbs-up',
+        color:'#3399ff',
+        theme:'dark'
       }
-      // {
-      //   name:'Rejections',
-      //   icon:'thumbs-down',
-      //   color:'#ff6600'
-      // }
     ]
   }
   goToItem(e){

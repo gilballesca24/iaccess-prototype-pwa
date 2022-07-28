@@ -1,29 +1,47 @@
-
-<div class="content_div animated bounceInUp" style="z-index:-10; position: fixed;">
+<div class="content_div animated bounceInUp" >
   <div class="mt-16">
-    <ion-label class="sm title"> Select Service</ion-label>
+    <ion-label class="sm title">Services</ion-label>
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="6" (click)="goToItem(item)" *ngFor="let item of items.slice(0,2)">
+              <div class="col_div  {{item.theme}}">
+                <ion-label>{{item.name}}</ion-label>
+              </div>
 
-    <ion-grid fixed>
-      <ion-row>
-        <ion-col size="6" (click)="goToItem(item)"  *ngFor="let item of items.slice(0,2)">
-          <div class="col_div  {{item.theme}}">
-            <!-- <ion-icon name="{{ item.icon }}" [style.color]= "item.color"></ion-icon> -->
-            <ion-label>{{item.name}}</ion-label>
-          </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4" (click)="goToItem(item)" *ngFor="let item of items.slice(2,5)">
+              <div class="col_div {{item.theme}}">
+                <ion-label>{{item.name}}</ion-label>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      
+      <ion-slide>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="6" (click)="goToItem(item)" *ngFor="let item of items.slice(4,2)">
+              <div class="col_div  {{item.theme}}">
+                <ion-label>{{item.name}}</ion-label>
+              </div>
 
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="4" (click)="goToItem(item)" *ngFor="let item of items.slice(2,10)">
-          <div class="col_div {{item.theme}}">
-            <!-- <ion-icon name="{{ item.icon }}" [style.color]= "item.color"></ion-icon> -->
-            <ion-label>{{item.name}}</ion-label>
-          </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4" (click)="goToItem(item)" *ngFor="let item of items.slice(2,10)">
+              <div class="col_div {{item.theme}}">
+                <ion-label>{{item.name}}</ion-label>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
 
-        </ion-col>
-      </ion-row>
-    </ion-grid>
   </div>
 </div>
-
-
