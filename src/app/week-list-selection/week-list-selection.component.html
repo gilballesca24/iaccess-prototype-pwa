@@ -28,9 +28,33 @@
         </ion-grid>
 
     </div>
-
-    <div class="arrow_container">
+    <div class="arrow_container" (click)="onArrowWeekListExpanderClick()">
       <img src="/assets/icon/arrow_down.png" class="weeek_list_expander" />
+      <div [ngClass]="setupContainerClass()">
+        <ion-grid>
+          <ion-row class="ion-align-items-start">
+            <ion-col>
+              <div class="circle_div">MON</div>
+            </ion-col>
+            <ion-col>
+              <div class="circle_div dark">TUE</div>
+            </ion-col>
+            <ion-col>
+              <div class="circle_div dark">WED</div>
+            </ion-col>
+            <ion-col>
+              <div class="circle_div dark">THU</div>
+            </ion-col>
+            <ion-col>
+              <div class="circle_div">FRI</div>
+            </ion-col>
+            <ion-col>
+              <div class="circle_div">SAT</div>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+        </div>
     </div>
+
   </div>
 </div>
