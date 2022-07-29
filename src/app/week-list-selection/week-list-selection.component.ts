@@ -10,13 +10,13 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
     trigger('openClose', 
     [
       state('open', style({
-        height: '300px',
+        height: '320px',
       })),
       state('closed', style({
         height: '0px'
       })),
       transition('open => closed', [
-        animate('1s')
+        animate('2s')
       ]),
       transition('closed => open', [
         animate('1s')
@@ -35,6 +35,8 @@ export class WeekListSelectionComponent implements OnInit {
   }
 
   onArrowWeekListExpanderClick() {
+    debugger;
+
     if (this.expandWeekListMenu) {
       this.expandWeekListMenu = false;
     } else {

@@ -30,8 +30,8 @@
     </div>
 
     <!--The calendar number of course will be programmatically set-->
-    <div class="arrow_container" (click)="onArrowWeekListExpanderClick()">
-      <img src="/assets/icon/arrow_down.png" class="weeek_list_expander" />
+    <div class="arrow_container" >
+      <img src="/assets/icon/arrow_down.png" class="weeek_list_expander" (click)="onArrowWeekListExpanderClick()"/>
       <div [ngClass]="setupContainerClass()" [@openClose]="expandWeekListMenu ? 'open' : 'closed'">
 
         <!--<ion-list>
@@ -74,6 +74,23 @@
             <ion-col class="calendar_month_year">
               August 2022
             </ion-col>
+            <ion-col>
+
+            </ion-col>
+            <ion-col>
+              <ion-segment value="days">
+                <ion-segment-button value="days">
+                  <ion-label>Days</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="week">
+                  <ion-label>Week</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="month">
+                  <ion-label>Month</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+
+            </ion-col>
           </ion-row>
           <ion-row class="blankRow"> 
                 
@@ -105,7 +122,7 @@
           <ion-row class="ion-text-center">
             <ion-col>
             </ion-col>
-            <ion-col>
+            <ion-col class="calendar_todays_date">
               1
             </ion-col>
             <ion-col>
@@ -216,8 +233,24 @@
               
             </ion-col>
           </ion-row>
+          <ion-row>
+            
+          </ion-row>
+          <ion-row>
+            <ion-col>
+            </ion-col>
+            <ion-col>
+              <ion-button>Today</ion-button>
+
+            </ion-col>
+            <ion-col>
+            </ion-col>
+          </ion-row>
         </ion-grid>
+
       </div>
+
+
     </div>
 
   </div>
