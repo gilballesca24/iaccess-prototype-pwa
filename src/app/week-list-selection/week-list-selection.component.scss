@@ -78,21 +78,19 @@
     width: inherit;
     position: sticky;
     opacity: .96;
-    height: 300px;
-    max-height: 300px;
-    //padding: 0 18px;
-    //background-color: white;
-    //overflow: hidden;
-    -webkit-transition: all 1s;
-    transition: all 1s ease-out;
+    //-webkit-transition: height 3s;
+    //transition: height 3s ease-in-out;
 }
 .weekListContainerHidden {
      display:none;
+     height: 0px;
    
  }
  
- //padding: 0 18px;
- //background-color: white;
- //max-height: 0;
- //overflow: hidden;
- //transition: max-height 1s ease-out;
+.weekNumber {
+border-radius: 20%;
+}
+
+.calendar_month_year {
+    font-weight: bolder;
+}

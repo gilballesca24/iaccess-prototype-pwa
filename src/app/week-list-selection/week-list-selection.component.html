@@ -1,4 +1,4 @@
-<div class=""  style="z-index:100; ">
+<div class="" style="z-index:100; ">
   <div class="timesheet_div">
     <ion-label class="title">Week 21</ion-label>
     <ion-label class="sm">07/11/2022 - 07/17/2022</ion-label>
@@ -25,35 +25,199 @@
             <div class="circle_div">SAT</div>
           </ion-col>
         </ion-row>
-        </ion-grid>
+      </ion-grid>
 
     </div>
+
+    <!--The calendar number of course will be programmatically set-->
     <div class="arrow_container" (click)="onArrowWeekListExpanderClick()">
       <img src="/assets/icon/arrow_down.png" class="weeek_list_expander" />
-      <div [ngClass]="setupContainerClass()">
+      <div [ngClass]="setupContainerClass()" [@openClose]="expandWeekListMenu ? 'open' : 'closed'">
+
+        <!--<ion-list>
+          <ion-radio-group>
+            <ion-list-header>
+              <ion-label>
+                Auto Manufacturers
+              </ion-label>
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>Cord</ion-label>
+              <ion-radio value="cord"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Duesenberg</ion-label>
+              <ion-radio value="duesenberg"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Hudson</ion-label>
+              <ion-radio value="hudson"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Packard</ion-label>
+              <ion-radio value="packard"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Studebaker</ion-label>
+              <ion-radio value="studebaker"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>-->
+
         <ion-grid>
           <ion-row class="ion-align-items-start">
-            <ion-col>
-              <div class="circle_div">MON</div>
-            </ion-col>
-            <ion-col>
-              <div class="circle_div dark">TUE</div>
-            </ion-col>
-            <ion-col>
-              <div class="circle_div dark">WED</div>
-            </ion-col>
-            <ion-col>
-              <div class="circle_div dark">THU</div>
-            </ion-col>
-            <ion-col>
-              <div class="circle_div">FRI</div>
-            </ion-col>
-            <ion-col>
-              <div class="circle_div">SAT</div>
+            <ion-col class="calendar_month_year">
+              August 2022
             </ion-col>
           </ion-row>
-          </ion-grid>
-        </div>
+          <ion-row class="blankRow"> 
+                
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              Sun
+            </ion-col>
+            <ion-col>
+              Mon
+            </ion-col>
+            <ion-col>
+              Tue
+            </ion-col>
+            <ion-col>
+              Wed
+            </ion-col>
+            <ion-col>
+              Thu
+            </ion-col>
+            <ion-col>
+              Fri
+            </ion-col>
+            <ion-col>
+              Sat
+            </ion-col>
+          </ion-row>
+          <ion-row></ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+            </ion-col>
+            <ion-col>
+              1
+            </ion-col>
+            <ion-col>
+              2
+            </ion-col>
+            <ion-col>
+              3
+            </ion-col>
+            <ion-col>
+              4
+            </ion-col>
+            <ion-col>
+              5
+            </ion-col>
+            <ion-col>
+              6
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              7
+            </ion-col>
+            <ion-col>
+              8
+            </ion-col>
+            <ion-col>
+              9
+            </ion-col>
+            <ion-col>
+              10
+            </ion-col>
+            <ion-col>
+              11
+            </ion-col>
+            <ion-col>
+              12
+            </ion-col>
+            <ion-col>
+              13
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              14
+            </ion-col>
+            <ion-col>
+              15
+            </ion-col>
+            <ion-col>
+              16
+            </ion-col>
+            <ion-col>
+              17
+            </ion-col>
+            <ion-col>
+              18
+            </ion-col>
+            <ion-col>
+              19
+            </ion-col>
+            <ion-col>
+              20
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              21
+            </ion-col>
+            <ion-col>
+              22
+            </ion-col>
+            <ion-col>
+              23
+            </ion-col>
+            <ion-col>
+              24
+            </ion-col>
+            <ion-col>
+              25
+            </ion-col>
+            <ion-col>
+              26
+            </ion-col>
+            <ion-col>
+              27
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col>
+              28
+            </ion-col>
+            <ion-col>
+              29
+            </ion-col>
+            <ion-col>
+              30
+            </ion-col>
+            <ion-col>
+              31
+            </ion-col>
+            <ion-col>
+              
+            </ion-col>
+            <ion-col>
+              
+            </ion-col>
+            <ion-col>
+              
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     </div>
 
   </div>
